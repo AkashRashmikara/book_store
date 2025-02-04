@@ -18,11 +18,11 @@ com.example.elmouaddibe_examen.app-jetified-core-ktx-1.13.1-16 C:\Users\ASUS\.gr
 com.example.elmouaddibe_examen.app-lifecycle-viewmodel-2.7.0-17 C:\Users\ASUS\.gradle\caches\transforms-3\ac127e5ef27e45f0cc1766a26ab8b0f9\transformed\lifecycle-viewmodel-2.7.0\res
 com.example.elmouaddibe_examen.app-lifecycle-runtime-2.7.0-18 C:\Users\ASUS\.gradle\caches\transforms-3\e077508b17ad3b6d9e76749e735b5b79\transformed\lifecycle-runtime-2.7.0\res
 com.example.elmouaddibe_examen.app-jetified-profileinstaller-1.3.1-19 C:\Users\ASUS\.gradle\caches\transforms-3\e0c8bc6afe200ac806c3bea5fda07004\transformed\jetified-profileinstaller-1.3.1\res
-com.example.elmouaddibe_examen.app-debug-20 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\android\app\src\debug\res
-com.example.elmouaddibe_examen.app-main-21 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\android\app\src\main\res
-com.example.elmouaddibe_examen.app-pngs-22 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\generated\res\pngs\debug
-com.example.elmouaddibe_examen.app-resValues-23 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\generated\res\resValues\debug
-com.example.elmouaddibe_examen.app-rs-24 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\generated\res\rs\debug
-com.example.elmouaddibe_examen.app-mergeDebugResources-25 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.elmouaddibe_examen.app-mergeDebugResources-26 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.elmouaddibe_examen.app-merged_res-27 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\flutter_LibraryManager\build\app\intermediates\merged_res\debug
+com.example.elmouaddibe_examen.app-debug-20 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\android\app\src\debug\res
+com.example.elmouaddibe_examen.app-main-21 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\android\app\src\main\res
+com.example.elmouaddibe_examen.app-pngs-22 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\generated\res\pngs\debug
+com.example.elmouaddibe_examen.app-resValues-23 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\generated\res\resValues\debug
+com.example.elmouaddibe_examen.app-rs-24 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\generated\res\rs\debug
+com.example.elmouaddibe_examen.app-mergeDebugResources-25 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.elmouaddibe_examen.app-mergeDebugResources-26 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.elmouaddibe_examen.app-merged_res-27 C:\Users\ASUS\Desktop\SLTC\6th Sem\Mobile Application\mid\book_store\build\app\intermediates\merged_res\debug

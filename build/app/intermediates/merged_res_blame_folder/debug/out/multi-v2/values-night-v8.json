@@ -4,7 +4,7 @@
             "outputFile": "com.example.elmouaddibe_examen.app-mergeDebugResources-25:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\Desktop\\SLTC\\6th Sem\\Mobile Application\\mid\\flutter_LibraryManager\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\ASUS\\Desktop\\SLTC\\6th Sem\\Mobile Application\\mid\\book_store\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
