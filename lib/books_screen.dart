@@ -44,42 +44,48 @@ class _BooksScreenState extends State<BooksScreen> {
       author: 'Kumarathunga Munidasa',
       image: 'assets/magulkama.jpeg',
       price: "Rs:400.00",
-      description: "Magul Kama is a Sinhala children's story book. The English translation, The Wedding Feast, is available for readers aged 8–10 and up.",
+      description:
+          "Magul Kama is a Sinhala children's story book. The English translation, The Wedding Feast, is available for readers aged 8–10 and up.",
     ),
     Book(
       title: 'Gamperaliya',
       author: 'Martin Wickramasinghe',
       image: 'assets/gamperaliya.jpg',
       price: "Rs:800.00",
-      description: "Gamperaliya is about the gradual decline of traditional village life in Sri Lanka due to modernization. The story follows an aristocratic family in a southern village and how their lives change as the commercial culture of the city replaces the village's traditional economic and social structure.",
+      description:
+          "Gamperaliya is about the gradual decline of traditional village life in Sri Lanka due to modernization. The story follows an aristocratic family in a southern village and how their lives change as the commercial culture of the city replaces the village's traditional economic and social structure.",
     ),
     Book(
       title: 'Madol Doowa',
       author: 'Martin Wickramasinghe',
       image: 'assets/madolduwa.jpg',
       price: "Rs:750.00",
-      description: "Madol Duwa is a children's novel by Martin Wickramasinghe that was translated into English. The title translates to 'island of mangroves' in Sinhala. ",
+      description:
+          "Madol Duwa is a children's novel by Martin Wickramasinghe that was translated into English. The title translates to 'island of mangroves' in Sinhala. ",
     ),
     Book(
       title: 'Amba Yahaluwo',
       author: 'T. B. Ilangarathne',
       image: 'assets/ambayahaluwo.jpg',
       price: "Rs:500.00",
-      description: "Amba Yahaluwo translates to 'The Best of Friends' in English. It is a Sinhala novel written by Tikiri Bandara Ilangaratne in 1957. The English translation was published in 1998 by Seneviratne B. Aludeniya. Amba Yahaluwo is about two friends, Nimal and Sunil, who are inseparable and don't care about social barriers. The story is about their courage and resolve to stay together through life's vicissitudes. ",
+      description:
+          "Amba Yahaluwo translates to 'The Best of Friends' in English. It is a Sinhala novel written by Tikiri Bandara Ilangaratne in 1957. The English translation was published in 1998 by Seneviratne B. Aludeniya. Amba Yahaluwo is about two friends, Nimal and Sunil, who are inseparable and don't care about social barriers. The story is about their courage and resolve to stay together through life's vicissitudes. ",
     ),
     Book(
       title: 'Ape Gama',
       author: 'Martin Wickramasinghe',
       image: 'assets/apegama.jpg',
       price: "Rs:600.00",
-      description: "Ape Gama is a semi-autobiographical book by Martin Wickramasinghe, a Sri Lankan author. The book was originally published in Sinhala in 1940 and translated into English in 1968 as Lay Bare the Roots. The book is about the author's childhood experiences in Sri Lanka's Southern Province.",
+      description:
+          "Ape Gama is a semi-autobiographical book by Martin Wickramasinghe, a Sri Lankan author. The book was originally published in Sinhala in 1940 and translated into English in 1968 as Lay Bare the Roots. The book is about the author's childhood experiences in Sri Lanka's Southern Province.",
     ),
     Book(
       title: 'Manuthapaya',
       author: 'I. M. R. E. Iriyagolla',
       image: 'assets/manuthapaya.jpeg',
       price: "Rs:900.00",
-      description: 'Manuthapaya was a popular translation of Les Misérables among readers. Iriyagolle was a writer, journalist, and translator who was fluent in both Sinhala and English. He also wrote songs like "Loken Uthum Rata Lankavai" and "Sema Danamana Dinu Sujathadarani". ',
+      description:
+          'Manuthapaya was a popular translation of Les Misérables among readers. Iriyagolle was a writer, journalist, and translator who was fluent in both Sinhala and English. He also wrote songs like "Loken Uthum Rata Lankavai" and "Sema Danamana Dinu Sujathadarani". ',
     ),
   ];
 
@@ -102,7 +108,9 @@ class _BooksScreenState extends State<BooksScreen> {
       }).toList();
     });
   }
-  void _addBook(String title, String author, String image, String description, String price) {
+
+  void _addBook(String title, String author, String image, String description,
+      String price) {
     setState(() {
       _books.add(Book(
         title: title,
@@ -114,6 +122,7 @@ class _BooksScreenState extends State<BooksScreen> {
       _filterBooks();
     });
   }
+
   void _showAddBookDialog() {
     final TextEditingController titleController = TextEditingController();
     final TextEditingController authorController = TextEditingController();
@@ -140,7 +149,8 @@ class _BooksScreenState extends State<BooksScreen> {
                 ),
                 TextField(
                   controller: imageController,
-                  decoration: const InputDecoration(labelText: 'Cover Image URL'),
+                  decoration:
+                      const InputDecoration(labelText: 'Cover Image URL'),
                 ),
                 TextField(
                   controller: priceController,
@@ -186,149 +196,177 @@ class _BooksScreenState extends State<BooksScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Books List',
-        style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromARGB(255, 49, 58, 66),
-                              fontWeight: FontWeight.bold,
-                            ),),
-        backgroundColor: const Color.fromARGB(255, 160, 212, 5),
-        
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(48.0),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                hintText: 'Search by title or author',
-                prefixIcon: const Icon(Icons.search),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-                filled: true,
-                fillColor: Colors.white,
-              ),
-            ),
+        title: const Text(
+          'Books List',
+          style: TextStyle(
+            fontSize: 20,
+            color: Color.fromARGB(255, 49, 58, 66),
+            fontWeight: FontWeight.bold,
           ),
         ),
+        backgroundColor: const Color.fromARGB(255, 160, 212, 5),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-            childAspectRatio: 0.6,
-          ),
-          itemCount: _filteredBooks.length,
-          itemBuilder: (context, index) {
-            final book = _filteredBooks[index];
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => BookDetailScreen(book: book),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
+              child: TextField(
+                controller: _searchController,
+                decoration: InputDecoration(
+                  hintText: 'Search by title or author',
+                  prefixIcon: const Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
-                );
-              },
-              child: Card(
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(10.0),
-  ),
-  elevation: 5,
-  child: Stack(
-    children: [
-      ClipRRect(
-        borderRadius: BorderRadius.circular(10.0),
-        child: Image.asset(
-          book.image,
-          height: 210,
-          width: double.infinity,
-          fit: BoxFit.cover,
-        ),
-      ),
-      Positioned(
-        top: 10.0,
-        right: 10.0,
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
-          decoration: BoxDecoration(
-            // ignore: deprecated_member_use
-            color: Colors.black.withOpacity(0.7),
-            borderRadius: BorderRadius.circular(8.0),
-          ),
-          child: Text(
-            book.price,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 14.0,
-              fontWeight: FontWeight.bold,
+                  filled: true,
+                  fillColor: Colors.white,
+                ),
+              ),
             ),
-          ),
-        ),
-      ),
-      Column(
-        children: [
-          const SizedBox(height: 220), // Adjust height to place the text below the image
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: Column(
-              children: [
-                Text(
-                  book.title,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  childAspectRatio: 0.6,
                 ),
-                const SizedBox(height: 5),
-                Text(
-                  book.author,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 5),
-                RatingBar.builder(
-                  initialRating: book.rating,
-                  minRating: 1,
-                  direction: Axis.horizontal,
-                  allowHalfRating: true,
-                  itemCount: 5,
-                  itemSize: 18.0,
-                  itemBuilder: (context, _) => const Icon(
-                    Icons.star,
-                    color: Colors.amber,
-                  ),
-                  onRatingUpdate: (rating) {
-                    setState(() {
-                      book.rating = rating;
-                    });
-                  },
-                ),
-              ],
+                itemCount: _filteredBooks.length,
+                itemBuilder: (context, index) {
+                  final book = _filteredBooks[index];
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BookDetailScreen(book: book),
+                        ),
+                      );
+                    },
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      elevation: 5,
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Image.asset(
+                              book.image,
+                              height: 200,
+                              width: double.infinity,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Positioned(
+                            top: 10.0,
+                            right: 10.0,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 4.0, horizontal: 10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.7),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              child: Text(
+                                book.price,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            top: 140.0,
+                            left: 0,
+                            right: 0,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 8.0, horizontal: 10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.7),
+                                borderRadius: BorderRadius.circular(0.0),
+                              ),
+                              child: Text(
+                                book.title,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              const SizedBox(height: 150),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Column(
+                                  children: [
+                                    const SizedBox(height: 60),
+                                    Text(
+                                      book.author,
+                                      style: const TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Color.fromARGB(255, 45, 45, 45),
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    const SizedBox(height: 5),
+                                    RatingBar.builder(
+                                      initialRating: book.rating,
+                                      minRating: 1,
+                                      direction: Axis.horizontal,
+                                      allowHalfRating: true,
+                                      itemCount: 5,
+                                      itemSize: 18.0,
+                                      itemBuilder: (context, _) => const Icon(
+                                        Icons.star,
+                                        color: Colors.amber,
+                                      ),
+                                      onRatingUpdate: (rating) {
+                                        setState(() {
+                                          book.rating = rating;
+                                        });
+                                      },
+                                    ),
+                                    const SizedBox(height: 5),
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(const SnackBar(
+                                                content:
+                                                    Text('Added to cart!')));
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: const Color.fromARGB(
+                                            255, 160, 212, 5),
+                                      ),
+                                      child: const Text('Add to Cart'),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
-          ),
-        ],
-      ),
-    ],
-  ),
-)
-
-            );
-          },
+          ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _showAddBookDialog,
-        backgroundColor: const Color.fromARGB(255, 160, 212, 5),
-        child: const Icon(Icons.add, color: Color.fromARGB(255, 49, 58, 66)),
       ),
     );
   }

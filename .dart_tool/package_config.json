@@ -50,6 +50,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///C:/Users/ASUS/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_dotenv-5.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/ASUS/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-3.0.2",
       "packageUri": "lib/",
@@ -206,7 +212,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2025-02-04T19:50:02.866744Z",
+  "generated": "2025-02-05T07:39:26.262386Z",
   "generator": "pub",
   "generatorVersion": "3.6.1",
   "flutterRoot": "file:///C:/flutter/src/flutter",

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'books_screen.dart';
-import 'members_screen.dart';
 import 'about_screen.dart';
 import 'chatbot_screen.dart';
 
@@ -37,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     BooksScreen(),
-    MembersScreen(),
     chatbotScreen(),
     AboutScreen(),
   ];
@@ -65,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Color.fromARGB(255, 160, 212, 5),
               ),
               accountName: Text(
-                'Library Menu',
+                'Menu',
                 style: TextStyle(
                   color: Color.fromARGB(255, 49, 58, 66),
                   fontWeight: FontWeight.bold,
@@ -73,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               accountEmail: Text(
-                'Public library',
+                'Store',
                 style: TextStyle(fontSize: 16,
                   color: Color.fromARGB(255, 49, 58, 66),),
               ),
@@ -102,26 +100,20 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               leading: const Icon(Icons.book),
               trailing: const Icon(Icons.arrow_forward),
-              title: const Text('Library'),
+              title: const Text('Store'),
               onTap: () => _onItemTapped(1),
-            ),
-            ListTile(
-              leading: const Icon(Icons.people),
-              trailing: const Icon(Icons.arrow_forward),
-              title: const Text('Members'),
-              onTap: () => _onItemTapped(2),
             ),
             ListTile(
               leading: const Icon(Icons.chat),
               trailing: const Icon(Icons.arrow_forward),
               title: const Text('Chatbot'),
-              onTap: () => _onItemTapped(3),
+              onTap: () => _onItemTapped(2),
             ),
             ListTile(
               leading: const Icon(Icons.info),
               trailing: const Icon(Icons.arrow_forward),
               title: const Text('About'),
-              onTap: () => _onItemTapped(4),
+              onTap: () => _onItemTapped(3),
             ),
           ],
         ),

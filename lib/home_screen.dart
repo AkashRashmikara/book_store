@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'books_screen.dart';
-import 'members_screen.dart';
 import 'about_screen.dart';
 import 'chatbot_screen.dart';
 
@@ -36,29 +35,29 @@ class HomeScreen extends StatelessWidget {
               child: Image.asset(
                 'assets/library.png',
                 width: MediaQuery.of(context).size.width, // Full width
-                height: 200,
+                height: 150,
                 fit: BoxFit.cover, // Ensures it scales properly
               ),
             ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   const Text(
-                    'Welcome to the Library',
+                    'Welcome to Sansun Pitu',
                     style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.w900,
                         color: Color.fromARGB(255, 49, 58, 66)),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   const Text(
-                    'Explore our book collection and join our community.',
+                    'Explore our book collection.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 49, 58, 66)),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 10),
                   GridView.count(
                     crossAxisCount: 2,
                     shrinkWrap: true,
@@ -77,12 +76,12 @@ class HomeScreen extends StatelessWidget {
                       ),
                       _buildFeatureCard(
                         icon: Icons.people,
-                        title: 'Manage members',
+                        title: 'Show store',
                         onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const MembersScreen()),
+                                builder: (context) => const BooksScreen()),
                           );
                         },
                       ),
@@ -112,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   const Text(
-                    'Advantages of our library',
+                    'Advantages of our Store',
                     style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

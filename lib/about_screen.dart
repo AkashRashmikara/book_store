@@ -13,7 +13,7 @@ class AboutScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Text(
-                'About the Library',
+                'About the Book Store',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class AboutScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 20),
                       const Text(
-                        'This library management application was created to make it easier to manage books and members.',
+                        'This Book Store application was created to make it easier to manage books and buy books',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 16),
                       ),
@@ -51,19 +51,7 @@ class AboutScreen extends StatelessWidget {
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         subtitle: Text(
-                          'Add, edit, and delete books easily.',
-                          style: TextStyle(fontSize: 16),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      const ListTile(
-                        leading: Icon(Icons.people, color: Colors.orangeAccent),
-                        title: Text(
-                          'Membership Management',
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                        subtitle: Text(
-                          'Manage memberships and member information.',
+                          '',
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
@@ -83,7 +71,7 @@ class AboutScreen extends StatelessWidget {
                       const Divider(),
                       const SizedBox(height: 20),
                       const Text(
-                        'Benefits of our library',
+                        'Benefits of our Store',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
