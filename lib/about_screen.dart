@@ -17,7 +17,7 @@ class AboutScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: Colors.orangeAccent,
+                  color: Color.fromARGB(255, 45, 45, 45),
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -45,7 +45,7 @@ class AboutScreen extends StatelessWidget {
                       const Divider(),
                       const SizedBox(height: 20),
                       const ListTile(
-                        leading: Icon(Icons.book, color: Colors.orangeAccent),
+                        leading: Icon(Icons.book, color: Color.fromARGB(255, 160, 212, 5),),
                         title: Text(
                           'Book management',
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -57,7 +57,7 @@ class AboutScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
                       const ListTile(
-                        leading: Icon(Icons.chat, color: Colors.orangeAccent),
+                        leading: Icon(Icons.chat, color: Color.fromARGB(255, 160, 212, 5),),
                         title: Text(
                           'Chatbot intelligent',
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -75,7 +75,7 @@ class AboutScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.orangeAccent,
+                          color: Color.fromARGB(255, 160, 212, 5),
                         ),
                         textAlign: TextAlign.center,
                       ),

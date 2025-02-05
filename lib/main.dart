@@ -51,7 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Book Store'),
+        title: const Text('Book Store',
+        style: TextStyle(
+                  color: Color.fromARGB(255, 45, 45, 45),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 26,
+                ),
+                ),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       drawer: Drawer(

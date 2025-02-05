@@ -74,13 +74,14 @@ class _chatbotScreenState extends State<chatbotScreen> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: isUser ? Colors.orangeAccent : Colors.teal,
+                color: isUser ? const Color.fromARGB(255, 160, 212, 5) : Colors.teal,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
                 msg['message'],
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 45, 45, 45),
+                  fontWeight: FontWeight.w700,
                   fontSize: 16,
                 ),
               ),
@@ -89,7 +90,7 @@ class _chatbotScreenState extends State<chatbotScreen> {
           if (isUser) const SizedBox(width: 10),
           if (isUser)
             const CircleAvatar(
-              backgroundColor: Colors.orangeAccent,
+              backgroundColor: Color.fromARGB(255, 160, 212, 5),
               child: Icon(
                 Icons.person,
                 color: Colors.white,
@@ -104,8 +105,14 @@ class _chatbotScreenState extends State<chatbotScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ChatBot'),
-        backgroundColor: Colors.orangeAccent,
+        title: const Text('ChatBot',
+        style: TextStyle(
+                  color: Color.fromARGB(255, 45, 45, 45),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 26,
+                ),
+                ),
+        backgroundColor: const Color.fromARGB(255, 160, 212, 5),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -144,7 +151,7 @@ class _chatbotScreenState extends State<chatbotScreen> {
                   },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                    backgroundColor: Colors.orangeAccent,
+                    backgroundColor: const Color.fromARGB(255, 160, 212, 5),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),

@@ -17,7 +17,7 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.book.title),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: const Color.fromARGB(255, 160, 212, 5),
       ),
       body: SingleChildScrollView(
         child: Padding(

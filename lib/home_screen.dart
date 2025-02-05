@@ -34,28 +34,27 @@ class HomeScreen extends StatelessWidget {
               tag: 'library_logo',
               child: Image.asset(
                 'assets/library.png',
-                width: MediaQuery.of(context).size.width, // Full width
+                width: MediaQuery.of(context).size.width, 
                 height: 150,
-                fit: BoxFit.cover, // Ensures it scales properly
+                fit: BoxFit.cover, 
               ),
             ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 5),
                   const Text(
-                    'Welcome to Sansun Pitu',
+                    'Welcome to',
                     style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 24,
                         fontWeight: FontWeight.w900,
                         color: Color.fromARGB(255, 49, 58, 66)),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 10),
                   const Text(
-                    'Explore our book collection.',
-                    textAlign: TextAlign.center,
+                    'Sansun Pitu',
                     style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 49, 58, 66)),
+                        fontSize: 45,
+                        fontWeight: FontWeight.w900,
+                        color: Color.fromARGB(255, 255, 255, 255)),
+                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10),
                   GridView.count(
@@ -119,13 +118,6 @@ class HomeScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10),
-                  const ListTile(
-                    leading: Icon(Icons.wifi, color: Colors.white),
-                    title: Text(
-                      'Access to a wide variety of resources',
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                  ),
                   const ListTile(
                     leading: Icon(Icons.group_work, color: Colors.white),
                     title: Text(
