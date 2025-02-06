@@ -63,7 +63,7 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
                     itemSize: 30.0,
                     itemBuilder: (context, _) => const Icon(
                       Icons.star,
-                      color: Colors.amber,
+                      color: Color.fromARGB(255, 160, 212, 5),
                     ),
                     onRatingUpdate: (rating) {
                       setState(() {
@@ -83,6 +83,40 @@ class _BookDetailScreenState extends State<BookDetailScreen> {
                     widget.book.description,
                     style: const TextStyle(fontSize: 16, height: 1.5),
                   ),
+
+                  const SizedBox(height: 20),
+
+                  /// **Added Download PDF & Add to Cart Buttons**
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          // Add PDF Download functionality here
+                        },
+                        icon: const Icon(Icons.picture_as_pdf),
+                        label: const Text('Download PDF'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(255, 160, 212, 5),
+                          foregroundColor: const Color.fromARGB(255, 45, 45, 45),
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                        ),
+                      ),
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          // Add to Cart functionality here
+                        },
+                        icon: const Icon(Icons.shopping_cart),
+                        label: const Text('Add to Cart'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(255, 160, 212, 5),
+                          foregroundColor: const Color.fromARGB(255, 45, 45, 45),
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                        ),
+                      ),
+                    ],
+                  ),
+
                   const SizedBox(height: 20),
                   const Divider(),
                   const SizedBox(height: 20),

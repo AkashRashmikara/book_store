@@ -159,7 +159,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icon, size: 50, color: Color.fromARGB(255, 49, 58, 66)),
+              Icon(icon, size: 50, color: const Color.fromARGB(255, 49, 58, 66)),
               const SizedBox(height: 10),
               Text(
                 title,
